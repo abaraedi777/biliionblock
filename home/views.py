@@ -24,6 +24,11 @@ class HomeView(View):
         why_join = request.POST.get("why_join")
         what_to_contribute = request.POST.get("what_to_contribute")
 
+        checked_data = []
+        for key in request.POST:
+            if key.startswith('checkbox'):
+                checked_data.append(request.POST[key])
+
         context = {
             "name": name,
             "email": email,
@@ -32,6 +37,7 @@ class HomeView(View):
             "wallet_proof": wallet_proof,
             "experience_years": experience_years,
             "previous_project": previous_project,
+            "skills": checked_data,
             "why_join": why_join,
             "what_to_contribute": what_to_contribute,
         }
@@ -41,11 +47,11 @@ class HomeView(View):
             subject = 'Billion Block User Registration',
             body = plain_message,
             from_email = settings.EMAIL_HOST_USER,
-            to = ["zkland001.com", ]
+            to = ["zkland001@gmail.com", ]
         )
         message.attach_alternative(html_message, "text/html")
         message.send()
 
-        messages.success(request, "Your application has been recieved!!!")
+        messages.success(request, f"{name} your application has been recieved!!!")
 
         return redirect("home:home_view")

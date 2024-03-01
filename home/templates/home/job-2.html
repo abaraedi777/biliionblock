@@ -157,27 +157,63 @@
                                     </div>
                                     <h3 class="fxt-page-title">Choose Skillsets</h3>
                                     <div class="form-group">
-                                        <div class="radio-box style-2">
-                                            <input id="radio-experiance1" name="radio-experiance" type="radio">
-                                            <label for="radio-experiance1">Web Development</label>
+                                        <div class="radio-box">
+                                            <input id="radio-experiance1" name="checkbox1" type="checkbox" value="Business Development">
+                                            <label for="radio-experiance1">Business Development</label>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="radio-box style-2">
-                                            <input id="radio-experiance2" name="radio-experiance" type="radio">
-                                            <label for="radio-experiance2">Software Development</label>
+                                        <div class="radio-box">
+                                            <input id="radio-experiance2" name="checkbox2" type="checkbox" value="Designer">
+                                            <label for="radio-experiance2">Designer</label>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="radio-box style-2">
-                                            <input id="radio-experiance3" name="radio-experiance" type="radio">
-                                            <label for="radio-experiance3">Mathematics</label>
+                                        <div class="radio-box">
+                                            <input id="radio-experiance3" name="checkbox3" type="checkbox" value="Developer">
+                                            <label for="radio-experiance3">Developer</label>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="radio-box style-2">
-                                            <input id="radio-experiance4" name="radio-experiance" type="radio">
-                                            <label for="radio-experiance4">system scripting</label>
+                                        <div class="radio-box">
+                                            <input id="radio-experiance4" name="checkbox4" type="checkbox" value="Marketer">
+                                            <label for="radio-experiance4">Marketer</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance5" name="checkbox5" type="checkbox" value="Operations">
+                                            <label for="radio-experiance5">Operations</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance6" name="checkbox6" type="checkbox" value="Product Management">
+                                            <label for="radio-experiance6">Product Management</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance7" name="checkbox7" type="checkbox" value="Research">
+                                            <label for="radio-experiance7">Research</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance8" name="checkbox8" type="checkbox" value="Video Production">
+                                            <label for="radio-experiance8">Video Production</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance9" name="checkbox9" type="checkbox" value="Memes">
+                                            <label for="radio-experiance9">Memes</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="radio-box">
+                                            <input id="radio-experiance10" name="checkbox10" type="checkbox" value="Other">
+                                            <label for="radio-experiance10">Other</label>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -242,7 +278,7 @@
     <script src="{% static 'js/main.js' %}"></script>
 
     <script>
-        function formFunction() {
+        function formFunction(a=0) {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var twiterUsername = document.getElementById("twiterUsername").value;
