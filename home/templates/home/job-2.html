@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -71,9 +73,9 @@
                         <div class="d-flex align-items-center flex-wrap justify-content-between">
                             <ul class="fxt-socials">
                                 <li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-9">
-                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://t.me/+THcZBn79tQkxZDhk" title="Facebook"><i class="fa fa-telegram"></i></a>
                                 </li>
-                                <li class="fxt-twitter fxt-transformY-50 fxt-transition-delay-10">
+                                <!-- <li class="fxt-twitter fxt-transformY-50 fxt-transition-delay-10">
                                     <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li class="fxt-google fxt-transformY-50 fxt-transition-delay-11">
@@ -84,7 +86,7 @@
                                 </li>
                                 <li class="fxt-pinterest fxt-transformY-50 fxt-transition-delay-13">
                                     <a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="fxt-copyright-text">Copyright © 2023 Billion Block. All Rights Reserved</div>
                         </div>
@@ -124,7 +126,7 @@
                                         <input id="email" type="email" class="form-control" name="email" placeholder="Email" oninput="formFunction()">
                                     </div>
                                     <div class="form-group">
-                                        <input id="twiterUsername" type="text" class="form-control" name="twitter_username" placeholder="Twitter Username" oninput="formFunction()">
+                                        <input id="twiterUsername" type="url" class="form-control" name="twitter_username" placeholder="Twitter Profile Link" oninput="formFunction()">
                                     </div>
                                     <div class="form-group">
                                         <div class="d-flex align-items-center gap-2 mt-5">
@@ -135,7 +137,7 @@
                                 <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Membership Criteria</h2>
                                     <div class="form-group">
-                                        <input id="followersNumber" type="number" class="form-control" name="followers_number" placeholder="Number of Followers" oninput="formFunction()">
+                                        <input id="followersNumber" type="number" min="500" class="form-control" name="followers_number" placeholder="Number of Followers (500 and above)" oninput="formFunction()" value="500">
                                     </div>
                                     <div class="form-group">
                                         <input id="walletProof" type="url" class="form-control" name="wallet_proof" placeholder="Proof of $700 or more (Link to blockchain explorer)" oninput="formFunction()">
@@ -156,61 +158,61 @@
                                         <input id="previousProject" type="url" class="form-control" name="previous_project" placeholder="Link to previous crypto project worked on" oninput="formFunction()">
                                     </div>
                                     <h3 class="fxt-page-title">Choose Skillsets</h3>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance1" name="checkbox1" type="checkbox" value="Business Development">
                                             <label for="radio-experiance1">Business Development</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance2" name="checkbox2" type="checkbox" value="Designer">
                                             <label for="radio-experiance2">Designer</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance3" name="checkbox3" type="checkbox" value="Developer">
                                             <label for="radio-experiance3">Developer</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance4" name="checkbox4" type="checkbox" value="Marketer">
                                             <label for="radio-experiance4">Marketer</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance5" name="checkbox5" type="checkbox" value="Operations">
                                             <label for="radio-experiance5">Operations</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance6" name="checkbox6" type="checkbox" value="Product Management">
                                             <label for="radio-experiance6">Product Management</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance7" name="checkbox7" type="checkbox" value="Research">
                                             <label for="radio-experiance7">Research</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance8" name="checkbox8" type="checkbox" value="Video Production">
                                             <label for="radio-experiance8">Video Production</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance9" name="checkbox9" type="checkbox" value="Memes">
                                             <label for="radio-experiance9">Memes</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" onclick="formFunction()">
                                         <div class="radio-box">
                                             <input id="radio-experiance10" name="checkbox10" type="checkbox" value="Other">
                                             <label for="radio-experiance10">Other</label>
@@ -301,7 +303,20 @@
             var experienceYears = document.getElementById("experienceYears").value;
             var previousProject = document.getElementById("previousProject").value;
 
-            if (experienceYears != "" && previousProject != "") {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var isChecked = false;
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].hasAttribute('checked') && checkboxes[i].checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+
+            console.log(isChecked)
+ 
+
+            if (experienceYears != "" && previousProject != "" && isChecked) {
                 document.getElementById("3of5").style.display = "block";
             } else {
                 document.getElementById("3of5").style.display = "none";
