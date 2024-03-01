@@ -28,9 +28,9 @@ SECRET_KEY = 'django-insecure-n&#8zhnbd4uhhgc!vrbl4kk%gs-#ykyqypx_((p1ywc+!9$100
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "biliionblock.onrender.com"] 
+ALLOWED_HOSTS = ["127.0.0.1", "biliionblock.onrender.com", "www.billionblock.fun"] 
 
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://biliionblock.onrender.com"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1", "https://biliionblock.onrender.com", "https://www.billionblock.fun"]
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
