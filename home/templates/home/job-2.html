@@ -23,6 +23,30 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #bb-logo {
+            width: 300px; 
+            height: 200px;
+        }
+
+        
+        @media only screen and (max-width: 768px) {
+            /* Add styles specific to mobile screens here */
+            /* For example: */
+            #bb-logo {
+                width: 150px;
+                height: 100px;
+            }
+
+            .fxt-logo {
+                display: block;
+                margin: 0 auto; /* Center the logo horizontally */
+            }
+
+            /* Add more styles as needed */
+        }
+    </style>
 </head>
 
 <body>
@@ -41,7 +65,12 @@
             <div class="fxt-heading-content">
                 <div class="fxt-video-background">
                     <div class="fxt-video">
-                        <div id="fxtVideo" data-property="{
+                        <video autoplay loop muted>
+                            <source src="{% static 'bg-video.mp4' %}" type="video/mp4">
+                            <!-- Add more video sources if needed (e.g., WebM, Ogg) -->
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <div id="fxtVideo" data-property="{
                             videoURL:'r4KpWiK08vM', 
                             autoPlay:true, 
                             mute:true, 
@@ -53,12 +82,12 @@
                             optimizeDisplay:true,
                             containment:'.fxt-video-background'
                         }">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="fxt-inner-wrap">
                     <div class="fxt-transformX-R-50 fxt-transition-delay-10">
-                        <a href="{% url 'home:home_view' %}" class="fxt-logo"><img src="{% static 'img/logo.png' %}" alt="Logo" style="width: 300px; height: 200px;"></a>
+                        <a href="{% url 'home:home_view' %}" class="fxt-logo"><img src="{% static 'img/logo.png' %}" alt="Logo"  id="bb-logo"></a>
                     </div>
                     <div class="fxt-transformX-R-50 fxt-transition-delay-10">
                         <div class="fxt-middle-content">
